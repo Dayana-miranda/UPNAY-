@@ -1,0 +1,22 @@
+Un programador tiene problemas para definir si un valor es mayor que otro cuando ingresa 2 números, seguramente no ha leído la documentación, pero para ayudarlo, necesita un programa que al ingresar 2 números, imprima siempre primero el más alto y luego el más bajo.
+
+Si el programador ingresa 11 y 150, la salida deberá mostrar 150 y luego 11. Los números podrán ser ingresados en cualquier orden y siempre deberán indicar cuál es el mayor y cuál es el menor.
+
+Proceso MayorYMenor
+    Definir num1, num2 Como Real
+	
+    Escribir "Ingrese el primer número: "
+    Leer num1
+    Escribir "Ingrese el segundo número: "
+    Leer num2
+	
+    Si num1 > num2 Entonces
+        Escribir num1, " y ", num2
+    Sino 
+		Escribir num2, " y ", num1
+		
+		si num1 == num2
+			Escribir "Ambos números son iguales: ", num1
+		FinSi
+	FinSi
+FinProceso
