@@ -1,0 +1,74 @@
+El programador sigue teniendo complicaciones para ajustar su código cuando ingresan valores, pero necesita ayuda, ahora su jefe, que no conoce mucho de programación, quiere un programa para calcular los rendimientos de 4 vendedores y ver la diferencia entre estos.
+
+El programa debe recibir los 4 valores de los vendedores, que se calcula en ventas por mes, después, el programa debe ordenarlos de menor a mayor, siendo 4 el mayor y 1 el menor, una vez hecho esto debe hacer las siguientes operaciones.
+
+Mostrar los números ordenados
+El resultado del 4 menos el 1
+El resultado del 2 menos el 1
+El resultado del 4 menos el 3
+El resultado del 3 menos el 2
+La suma de todas las ventas y el promedio general
+
+Algoritmo IF_4
+	Definir venta1, venta2, venta3, venta4, temp, totalVentas, promedioVentas Como Real
+	
+	Escribir "Ingrese las ventas del vendedor 1:"
+	Leer venta1
+	Escribir "Ingrese las ventas del vendedor 2:"
+	Leer venta2
+	Escribir "Ingrese las ventas del vendedor 3:"
+	Leer venta3
+	Escribir "Ingrese las ventas del vendedor 4:"
+	Leer venta4
+	
+	Si venta1 > venta2 Entonces
+		may = venta1
+		venta1 = venta2
+		venta2 = may
+	FinSi
+	Si venta1 > venta3 Entonces
+		may = venta1
+		venta1 = venta3
+		venta3 = may
+	FinSi
+	Si venta1 > venta4 Entonces
+		may = venta1
+		venta1 = venta4
+		venta4 = may
+	FinSi
+	
+	Si venta2 > venta3 Entonces
+		may = venta2
+		venta2 = venta3
+		venta3 = may
+	FinSi
+	Si venta2 > venta4 Entonces
+		may = venta2
+		venta2 = venta4
+		venta4 = may
+	FinSi
+	
+	Si venta3 > venta4 Entonces
+		may = venta3
+		venta3 = venta4
+		venta4 = may
+	FinSi
+	
+	Escribir "Las ventas de los vendedores ordenadas de menor a mayor son:"
+	Escribir "Vendedor 1: ", venta1
+	Escribir "Vendedor 2: ", venta2
+	Escribir "Vendedor 3: ", venta3
+	Escribir "Vendedor 4: ", venta4
+	
+	Escribir "La diferencia entre el vendedor 4 y el vendedor 1 es: ", venta4 - venta1
+	Escribir "La diferencia entre el vendedor 2 y el vendedor 1 es: ", venta2 - venta1
+	Escribir "La diferencia entre el vendedor 4 y el vendedor 3 es: ", venta4 - venta3
+	Escribir "La diferencia entre el vendedor 3 y el vendedor 2 es: ", venta3 - venta2
+	
+	totalVentas = venta1 + venta2 + venta3 + venta4
+	promedioVentas = totalVentas / 4
+	
+	Escribir "La suma total de las ventas es: ", totalVentas
+	Escribir "El promedio de las ventas es: ", promedioVentas
+	
+FinAlgoritmo
