@@ -1,0 +1,56 @@
+Un banco necesita realizar un sistema de evaluación preliminar para otorgar un crédito, a fin de mejorar el tiempo de validación y que los potenciales clientes puedan saber de manera más rápido a quiénes se les pudiera otorgar un crédito.
+
+De acuerdo a la última reunión innecesaria, a las 6:00 p.m. un día sábado, se presentaron las siguientes condicionales.
+
+El prospecto debe tener al menos 21 años de edad, debe tener un ingreso de al menos 8,500 mensuales, debe tener al menos 5 años de historial crediticio y dicho historial crediticio deberá ser positivo, es decir, que siempre han pagado a tiempo, finalmente, el monto del crédito deberá ser de al menos $10,000.
+
+Después de una discusión acalorada donde la Lic. Petra comenzó a llorar defendiendo a la gente de bajos recursos, se llegó al siguiente acuerdo, fue horrible, la reunión terminó a las 9:00 p.m., pero al final, todos abrazaron a la Lic. Petra y oraron por ella, hubo galletas y café para todos. Se llegaron a los siguientes acuerdos.
+
+El prospecto deberá tener al menos 18 años de edad, con un ingreso de al menos $4,000 al mes, deberá tener al menos 2 años trabajando, ya no se revisará su historial crediticio y se estableció a que el préstamo máximo sería de máximo un 15% del salario mensual del prospecto multiplicado por 12 mensualidades. Adicionalmente, si el prospecto tiene al menos $10,000 de saldo en su cuenta de banco o si el préstamo es para una cuestión médica, su crédito será aprobado automáticamente.
+
+El reporte deberá mostrar la edad del prospecto, su ingreso mensual, de cuánto sería el monto máximo del préstamo y su crédito será aprobado o no.
+
+Para la entrega, añade el código en un archivo tipo .txt y una captura de la consola con la respuesta.
+
+Algoritmo prestamo_bancario 
+	
+	Escribir "nombre_persona"
+	leer nombre_persona 
+	
+	Escribir "años_edad"
+	leer años_edad 
+	
+	Escribir "ingreso_mensual" 
+	leer ingreso_mensual 
+	
+	Escribir "años_trabajando"
+	leer años_trabajando 
+	
+	Escribir "¿es_para_cuestion_medica? (1 = si, 0 = no)"
+	leer es_para_cuestion_medica
+	
+	Escribir "saldo_bancario"
+	leer saldo_bancario 
+	mm = ingreso_mensual * .15 * 12 
+	
+	e1 = años_edad > 18 
+	i1 = ingreso_mensual >= 4000
+	a1 = años_trabajando >= 2
+	s1 = saldo_bancario >= 100000
+	m1 = monto_maximo > 10000
+	cm = cuestion_medica 
+	
+	Escribir e1
+	Escribir i1 
+	Escribir a1
+	Escribir s1
+	Escribir cm 
+	
+	//prestamo bancario 
+	prestamo_aceptado = e1 y i1 y a1 o s1 o cm 
+	escribir "tu edad es ", años_edad
+	Escribir "tu ingreso mensual es ", ingreso_mensual
+	Escribir "monto_maximo del prestamo ", mm
+	Escribir "¿cuestion medica? ", es_para_cuestion_medica
+	Escribir nombre_persona "tu prestamo fue ", prestamo_aceptado
+FinAlgoritmo
