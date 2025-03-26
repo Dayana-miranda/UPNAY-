@@ -1,21 +1,21 @@
-SubProceso areayvolumenfig (figura_elegida)
+SubProceso figuraarea (figura_elegida)
 	Escribir " el area y volumen de que figura desea obtener (2) para esfera , (4) para Cilindro , (6)  para ESFERA "
 	leer figura_elegida
 	Si figura_elegida = 1 Entonces
-		//proceso area 
+		//proceso
 		Escribir  "elegiste sacar el area y volumen esfera"
 		Escribir "Ingrese el lado de una cara de la figura"
 		Leer f_lado 
 		area_esfera= 6 * f_lado ^ 2
 		Escribir "el area de la esfera es = area_esfera"
 		
-		// proceso volumen
+		// proceso
 		Escribir  " volumen de la esfera."
 		esfera_volmen = Lado_esfera * Lado_esfera * Lado_esfera
 		Escribir"el volumen de la esfera es = cubo_esfera"
 	SiNo
 		Si figuera_elegida = 2 Entonces
-			// proceso area
+			// proceso 
 			Escribir  "elegiste sacar el area y volumen cilindro"
 			Escribir "ingresa elradio de la base del Cilindro"
 			Leer cubo_radio
@@ -23,7 +23,7 @@ SubProceso areayvolumenfig (figura_elegida)
 			Leer Altura_cilindro
 			area_CI= 2 * 3.1416 * radio_cilindro ^ 2 + 2 * radio_C * h_C 
 			Escribir"el area del cilindro es = area_cilindro"
-			// proceso volumen
+			// proceso
 			volumen_cilindro = 3.1416 * radio_cilindro ^ 2 * Altura_cilindro 
 			Escribir"el volumen del cilindro es = volumen_cilindro"
 		SiNo
@@ -44,20 +44,20 @@ SubProceso areayvolumenfig (figura_elegida)
 		Escribir " Cual figura desea obtener su AREA Y VOLUMEN (1) para CUBO , (2) para CILINDRO , (3)  para ESFERA "
 		leer ele_f
 		Si ele_f  = 1 Entonces
-			//area
+			//proceso
 			Escribir  " elegiste sacar el area y volumen del cubo."
 			Escribir "Ingrese el lado de la cara del cubo"
 			Leer Lado_C
 			area_cilindro = 6 * Lado_C ^ 2
 			Escribir"el area del cilindro es = area_cilindro"
 			
-			//Volumen
+			//proceso
 			Escribir  " volumen del cubo."
 			volumen_esfera = Lado_esfera * Lado_esfera * Lado_esfera
 			Escribir"volumen de esfera es = volumen_esfera"
 		SiNo
 			Si figuera_elegida = 2 Entonces
-				//area
+				//proceso
 				Escribir  " elegiste sacar el area y volumen del cilindro."
 				Escribir "Ingrese el radio de la base del Cilindro"
 				Leer radio_cilindro
@@ -65,7 +65,7 @@ SubProceso areayvolumenfig (figura_elegida)
 				Leer Altura_cilindro
 				area_CI= 2 * radio_C ^ 2 + 2 * radio_C * h_C 
 				Escribir"el area del cilindro es = area_cilindro * 3.1416"
-				//volumen
+				//proceso
 				volumen_cilindro = 3.1416 * radio_cilindro ^ 2 * h_C 
 				Escribir"el volumen del cilindro es = volumen_cilindro"
 			SiNo
@@ -84,6 +84,6 @@ SubProceso areayvolumenfig (figura_elegida)
 FinSubProceso
 
 
-Algoritmo Area
-	areayvolumenfig(figura_elegida)
+Algoritmo figuras areas y volumen
+	figuraarea(figura_elegida)
 FinAlgoritmo
