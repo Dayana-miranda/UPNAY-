@@ -18,7 +18,7 @@ Unidad 1
 Descripción breve de la unidad:
 En esta unidad se aprendieron conceptos como lo procedimientos que se llevaban a cabo para la crear un programa 
 
-[Ir a Unidad 1](https://github.com/CairParavel314/FP101/tree/main/U1)
+[Ir a Unidad 1](https://github.com/Dayana-miranda/UPNAY-/tree/main/U1)
 
 Unidad 2
 
