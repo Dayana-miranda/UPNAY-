@@ -1,0 +1,34 @@
+SubAlgoritmo salario_bruto(numero_de_horas_trabajadas, precio_por_hora_trabajadas, b Por Referencia, i, s, n)
+    b = numero_de_horas_trabajadas * precio_por_hora_trabajadas
+    Mostrar "Salario bruto es:" b
+FinSubAlgoritmo
+
+SubAlgoritmo descuento_impuesto(b, i Por Referencia, s, n)
+    i = b * 0.15
+    Mostrar "Descuento de impuesto es:" i
+FinSubAlgoritmo
+
+SubAlgoritmo seguridad_social(b, i, s Por Referencia, n)
+    s = b * 0.10
+    Mostrar "Descuento de seguridad social es:" s
+FinSubAlgoritmo
+
+SubAlgoritmo salario_neto(b, i, s, n Por Referencia)
+    n = b - i - s
+    Mostrar "Salario neto es:" n
+FinSubAlgoritmo
+
+Algoritmo calculo_salario
+    Definir numero_de_horas_trabajadas, precio_por_hora_trabajadas Como Real
+    Definir b, i, s, n Como Real
+    
+    Escribir "Ingrese número de horas trabajadas:"
+    Leer numero_de_horas_trabajadas
+    Escribir "Ingrese precio por hora trabajada:"
+    Leer precio_por_hora_trabajadas
+    
+    salario_bruto(numero_de_horas_trabajadas, precio_por_hora_trabajadas, b, i, s, n)
+    descuento_impuesto(b, i, s, n)
+    seguridad_social(b, i, s, n)
+    salario_neto(b, i, s, n)
+FinAlgoritmo
