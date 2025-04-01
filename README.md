@@ -32,7 +32,7 @@ Unidad 3
 Descripción breve de la unidad:
 En esta unidad se aprendieron conceptos como estructura más complejas como los son los subprocesos y aprendimos a cerca del uso basico de GitHub
 
-[Ir a Unidad 3](https://github.com/CairParavel314/FP101/tree/main/U1)
+[Ir a Unidad 3](https://github.com/Dayana-miranda/UPNAY-/tree/main/U3)
 
 Comentarios personales sobre la materia y propuestas de mejoras: Deberian de explicar un poco mejor las base de cada concepto
 
