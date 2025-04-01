@@ -25,7 +25,7 @@ Unidad 2
 Descripción breve de la unidad:
 En esta unidad se aprendieron conceptos como las estrucutra de control como if, while, for
 
-[Ir a Unidad 2](https://github.com/CairParavel314/FP101/tree/main/U1)
+[Ir a Unidad 2](https://github.com/Dayana-miranda/UPNAY-/tree/main/U2)
 
 Unidad 3
 
